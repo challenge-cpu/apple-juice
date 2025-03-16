@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Game's Hidden Room</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap');
+        
+        body {
+            font-family: 'Rubik Glitch', sans-serif;
+            text-align: center;
+            background: url('/static/squidgame.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ff0055;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .dialogue-box {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 30px;
+            border: 3px solid #ff0055;
+            border-radius: 15px;
+            display: inline-block;
+            max-width: 70%;
+            box-shadow: 0 0 20px rgba(255, 0, 85, 0.7);
+        }
+        .dialogue {
+            font-size: 2.5rem;
+            color: #ffffff;
+            text-shadow: 3px 3px 10px rgba(255, 0, 85, 0.8);
+            animation: glitch 2.5s infinite;
+        }
+
+        @keyframes glitch {
+            0% { transform: translate(0); }
+            20% { transform: translate(-2px, 2px); }
+            40% { transform: translate(-2px, -2px); }
+            60% { transform: translate(2px, 2px); }
+            80% { transform: translate(2px, -2px); }
+            100% { transform: translate(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="dialogue-box">
+        <div class="dialogue">"You shouldn't have found this room... The game is not over yet!"</div>
+    </div>
+</body>
+</html>
